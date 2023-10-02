@@ -1,11 +1,8 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println("test")
 }
 
-func reverse() {
-	fmt.Println("test")
+func reverse(s string) (result string, e error) {
+	return "", nil
 }
