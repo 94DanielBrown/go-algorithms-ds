@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/94DanielBrown/helpers"
 )
 
 func main() {
@@ -10,6 +9,4 @@ func main() {
 }
 
 func reverse(s string) (result string) {
-	return helpers.Reverse(s)
-	//	return "", nil
 }
