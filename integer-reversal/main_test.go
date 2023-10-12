@@ -13,8 +13,8 @@ func Test_functionExists(t *testing.T) {
 
 func Test_reversesInteger(t *testing.T) {
 	reverseTests := []struct {
-		input    int16
-		expected int16
+		input    int
+		expected int
 	}{
 		{15, 51},
 		{981, 189},

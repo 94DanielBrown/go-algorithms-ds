@@ -13,11 +13,11 @@ func Test_functionExists(t *testing.T) {
 
 func Test_chunksArray(t *testing.T) {
 	chunkTests := []struct {
-		array    []int8
-		size     int8
-		expected [][]int8
+		array    []int
+		size     int
+		expected [][]int
 	}{
-		{[]int8{1, 2, 3, 4, 5}, 2, [][]int8{{1, 2}, {3, 4}, {5}}},
+		{[]int{1, 2, 3, 4, 5}, 2, [][]int{{1, 2}, {3, 4}, {5}}},
 	}
 
 	for _, e := range chunkTests {
