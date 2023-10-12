@@ -17,8 +17,9 @@ func Test_chunksArray(t *testing.T) {
 		secondString string
 		expected     bool
 	}{
-		{"", "", true},
-		{"", "", true},
+		{"rail safety", "fairy tales", true},
+		{"RAIL! SAFETY!", "fairy tales", true},
+		{"Hi there", "Bye there", false},
 	}
 
 	for _, e := range anagramTests {
