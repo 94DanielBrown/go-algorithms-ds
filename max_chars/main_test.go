@@ -23,7 +23,7 @@ func Test_findsMaxChar(t *testing.T) {
 	for _, e := range maxCharTests {
 		result := maxChars(e.input)
 		if result != e.expected {
-			t.Errorf("Got %n but got %n", result, e.expected)
+			t.Errorf("Got %v but got %v", result, e.expected)
 		}
 	}
 }
