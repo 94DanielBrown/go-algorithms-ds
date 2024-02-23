@@ -3,15 +3,8 @@ package main
 import (
 	"io"
 	"os"
-	"reflect"
 	"testing"
 )
-
-func Test_functionExists(t *testing.T) {
-	if reflect.ValueOf(printSteps).IsNil() {
-		t.Errorf("Function doesn't exist")
-	}
-}
 
 func Test_printsSteps(t *testing.T) {
 	stepsTests := []struct {

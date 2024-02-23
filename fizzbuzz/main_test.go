@@ -6,22 +6,22 @@ import (
 	"testing"
 )
 
-func Test_pyramid(t *testing.T) {
-	pyramidTests := []struct {
+func Test_fizzbuzz(t *testing.T) {
+	fizzbuzzTests := []struct {
 		n        int
 		expected string
 	}{
-		{1, "#\n"},
-		{2, "# \n###\n"},
-		{3, "# \n### \n#####\n"},
+		{1, "1\n"},
+		{5, "1\n2\nfizz\n4\nbuzz\n"},
+		{15, "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n11\nfizz\n13\n14\nfizzbuzz\n"},
 	}
 
-	for _, e := range pyramidTests {
+	for _, e := range fizzbuzzTests {
 		oldOut := os.Stdout
 		r, w, _ := os.Pipe()
 		os.Stdout = w
 
-		pyramid(e.n)
+		fizzbuzz(e.n)
 		_ = w.Close()
 		os.Stdout = oldOut
 		out, _ := io.ReadAll(r)

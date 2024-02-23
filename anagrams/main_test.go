@@ -1,15 +1,8 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
-
-func Test_functionExists(t *testing.T) {
-	if reflect.ValueOf(anagrams).IsNil() {
-		t.Errorf("Function doesn't exist")
-	}
-}
 
 func Test_chunksArray(t *testing.T) {
 	anagramTests := []struct {

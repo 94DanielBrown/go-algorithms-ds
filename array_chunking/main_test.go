@@ -5,12 +5,6 @@ import (
 	"testing"
 )
 
-func Test_functionExists(t *testing.T) {
-	if reflect.ValueOf(chunk).IsNil() {
-		t.Errorf("Function doesn't exist")
-	}
-}
-
 func Test_chunksArray(t *testing.T) {
 	chunkTests := []struct {
 		array    []int
